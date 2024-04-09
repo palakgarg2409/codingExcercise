@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Football World Cup Scoreboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>Live Football World Cup Scoreboard</h1>
+
+<div class="form-group">
+    <label for="home-team">Home Team:</label>
+    <input type="text" id="home-team"><br><br>
+    <label for="away-team">Away Team:</label>
+    <input type="text" id="away-team">
+    <button onclick="startGame()">Start Game</button>
+</div>
+
+<div class="form-group">
+    <label for="home-score">Home Score:</label>
+    <input type="number" id="home-score" min="0"><br><br>
+    <label for="away-score">Away Score:</label>
+    <input type="number" id="away-score" min="0">
+    <button onclick="updateScore()">Update Score</button>
+</div>
+
+<table id="scoreboard">
+    <thead>
+        <tr>
+            <th>Home Team</th>
+            <th>Away Team</th>
+            <th>Home Score</th>
+            <th>Away Score</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="scoreboard-body">
+    </tbody>
+</table>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
